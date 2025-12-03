@@ -22,6 +22,7 @@ The system continuously monitors temperature and humidity, automatically actuati
 - **Safety System**: Visual (LED) and Audio (Buzzer) alarms for critical environmental deviations.
 
 ### 💻 Web Dashboard (Python/Flask)
+![Web Dashboard Interface](Assets/AppInterface.png)
 - **Live Visualization**: Beautiful, responsive dashboard built with **React** and **Tailwind CSS**.
 - **Real-time Charts**: Dynamic charts tracking temperature and humidity trends over time.
 - **System Status**: Visual indicators for Fan and Pump operation.
@@ -70,6 +71,8 @@ Connect the hardware components as defined in `main.c`:
 | **LCD EN** | RB0 | Display Control |
 | **UART TX** | RC6 | Serial Transmit |
 | **UART RX** | RC7 | Serial Receive |
+
+![Circuit Schematic](Assets/SchematicCapture.png)
 
 > [!IMPORTANT]
 > Ensure your PC is connected to the PIC's UART pins via a USB-TTL converter or RS232 level shifter. Update the `SERIAL_PORT` in `server.py` to match your system (e.g., `COM3` or `/dev/ttyUSB0`).
